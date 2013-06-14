@@ -1,8 +1,9 @@
 require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
+require 'erb'
 
-File.open('index.html', 'w') do |html|
+File.open('index.html.erb', 'w') do |html|
   user_and_stat = []
   File.open("users_and_score.txt", "r") do |txt|
     while (line = txt.gets)
@@ -10,6 +11,7 @@ File.open('index.html', 'w') do |html|
     end
   end
   user_and_stat.reverse!
+  test = "Test"
 
 # creation of the html doc
 
