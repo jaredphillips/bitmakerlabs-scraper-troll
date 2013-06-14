@@ -1,20 +1,25 @@
 body {
+	background-color: 2C3E50;
 	margin-left: 30%;
 	margin-top: 2%;
 }
 
 h1 {
 	font-family: 'Lily Script One', cursive;
-	font-size: 50px
+	font-size: 50px;
+	color: 3498DB;
 }
 
 h3 {
 	font-family: 'Lily Script One', cursive;
 	font-size: 32px;
 	margin-left: 10%;
+	color: E74C3C;
 }
 
-div {
-	font-family: font-family: 'Milonga', cursive;
-	font-size: 15px;
+
+.name {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 25px;
+	color: ECF0F1;
 }
