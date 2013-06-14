@@ -21,15 +21,16 @@ File.open('divs_for_scrape_results.html', 'w') do |html|
   html.write("<title>Github Pride</title>")
   html.write("</head>")
   html.write("<body>")
-    html.write("<h1>Always be pushing...</h1>")
-    html.write("<h3>               ...you never know who will be scraping</h3>")
+  html.write("<h1>Always be pushing...</h1>")
+  html.write("<h3>               ...you never know who will be scraping</h3>")
 
-      user_and_stat.each do |line|
-      line.to_s
+  user_and_stat.map! do |lines|
+    lines.map! do |line|
       html.write("<div>\n")
       html.write(line.to_s)
       html.write("</div>\n")
-    end 
-  html.write("</body>")
-  html.write("</html>")
+      end
+    html.write("</body>")
+    html.write("</html>")
+  end
 end
